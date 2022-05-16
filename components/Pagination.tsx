@@ -16,16 +16,16 @@ export default function Pagination({
       <button
         disabled={currentPage === 1}
         onClick={() => router.push(`/pages/${currentPage - 1}`)}
-        className="border py-1 px-2 disabled:text-gray-300"
+        className="border py-1 px-2 disabled:text-gray-300 h-10 rounded"
       >
         Prev
       </button>
-      {arr.map((val) => {
+      {arr.map((val, i) => {
         return (
-          <button>
+          <button key={i}>
             <Link href={`/pages/${val}`}>
               <a
-                className={`border py-1 px-2 rounded ${
+                className={`border py-1 px-3 rounded h-10 block ${
                   currentPage === val ? "text-blue-500 border-blue-500" : ""
                 }`}
               >
@@ -38,7 +38,7 @@ export default function Pagination({
       <button
         disabled={currentPage === totalPages}
         onClick={() => router.push(`/pages/${currentPage + 1}`)}
-        className="border py-1 px-2 disabled:text-gray-300"
+        className="border py-1 px-2 disabled:text-gray-300 h-10 rounded"
       >
         Next
       </button>

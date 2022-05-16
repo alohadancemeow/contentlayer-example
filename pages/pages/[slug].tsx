@@ -4,10 +4,10 @@ import Layout from "components/Layout";
 import PostCard from "components/PostCard";
 import PageTitle from "components/PageTitle";
 import Pagination from "components/Pagination";
+import siteMetadata from "siteMetadata";
 
 const totalPosts = allPosts.length;
-const postsPerPage = 2;
-const totalPages = Math.ceil(totalPosts / postsPerPage);
+const totalPages = Math.ceil(totalPosts / siteMetadata.postsPerPage);
 
 export const getStaticPaths: GetStaticPaths = () => {
   let paths: string[] = [];
@@ -29,8 +29,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
     else if (x < y) return 1;
     else return -1;
   });
-  const start = (page - 1) * postsPerPage;
-  const end = start + postsPerPage;
+  const start = (page - 1) * siteMetadata.postsPerPage;
+  const end = start + siteMetadata.postsPerPage;
   posts = posts.slice(start, end);
   return {
     props: {
@@ -53,8 +53,8 @@ const Home: NextPage<{
         description="Hi, I'm Naimul Haque. Aspiring to become a polymath."
       />
       <div className="space-y-12">
-        {posts.map((post) => {
-          return <PostCard {...post} />;
+        {posts.map((post, i) => {
+          return <PostCard key={i} {...post} />;
         })}
       </div>
       <Pagination totalPages={totalPages} currentPage={currentPage} />

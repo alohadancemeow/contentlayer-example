@@ -27,7 +27,7 @@ export default function PostCard({
         })}
       </div>
       <div className="col-span-3 space-y-3">
-        <h2 className="text-3xl font-medium text-slate-800 dark:text-gray-100">
+        <h2 className="text-3xl font-medium text-[color:var(--heading-color)]">
           {title}
         </h2>
         <div className="flex space-x-6">

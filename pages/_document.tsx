@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import siteMetadata from "siteMetadata";
 
 export default function Document() {
   return (
@@ -24,6 +25,18 @@ export default function Document() {
         />
       </Head>
       <body>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            const theme = localStorage.getItem("theme") || "light";
+            const root = document.documentElement;
+            const styles = ${JSON.stringify(siteMetadata.themes)}
+            root.style.setProperty('--text-color', styles[theme].textColor)
+            root.style.setProperty('--heading-color', styles[theme].headingColor)
+            root.style.setProperty('--background-color', styles[theme].backgroundColor)
+        `,
+          }}
+        ></script>
         <Main />
         <NextScript />
       </body>

@@ -22,7 +22,7 @@ export default function PostTitle({
           year: "numeric",
         })}
       </p>
-      <h2 className="text-5xl text-slate-800 font-medium dark:text-gray-100">
+      <h2 className="text-5xl text-[color:var(--heading-color)] font-medium">
         {title}
       </h2>
       <div className="flex space-x-6">
