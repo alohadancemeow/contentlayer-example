@@ -1,5 +1,6 @@
+import Layout from "components/Layout";
+import PageTitle from "components/PageTitle";
 import { allPosts } from "contentlayer/generated";
-import Header from "components/Header";
 import { GetStaticProps, NextPage } from "next";
 import Link from "next/link";
 
@@ -24,24 +25,26 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
 const TagsPage: NextPage<{ tags: Tags }> = ({ tags }) => {
   return (
-    <div className="my-20">
-      <Header />
-      <div className="max-w-3xl px-4 mx-auto space-y-8">
-        <div className="flex space-x-2 flex-wrap">
+    <Layout>
+      <PageTitle
+        title="Tags"
+        description="A collection of topic and categoory tags to sort blog posts"
+      />
+      <div className="space-y-8">
+        <div className="flex space-x-8 flex-wrap">
           {Object.keys(tags).map((tag) => {
             return (
-              <div className="bg-blue-100 px-2 py-1 rounded-xl text-sm">
-                <Link href={`/tags/${tag.split(" ").join("-")}`}>
-                  <a>
-                    {tag} ({tags[tag]})
-                  </a>
-                </Link>
-              </div>
+              <Link href={`/tags/${tag.split(" ").join("-")}`}>
+                <a className="uppercase inline-block">
+                  <span className="text-blue-500">{tag}</span>{" "}
+                  <span>({tags[tag]})</span>
+                </a>
+              </Link>
             );
           })}
         </div>
       </div>
-    </div>
+    </Layout>
   );
 };
 

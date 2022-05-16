@@ -1,6 +1,6 @@
 ---
 title: Prime Factorization Using Sieve Method
-date: "2017-05-28T22:40:32.169Z"
+date: "2017-03-28T22:40:32.169Z"
 tags: [number theory, math]
 description: "In the previous article, we've seen how we can calculate the prime factorization of a single number."
 ---
