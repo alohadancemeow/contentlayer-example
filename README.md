@@ -22,10 +22,10 @@ Contentlayer is a content SDK that makes working with content easy.  Getting mar
   - [1:27:36](https://www.youtube.com/watch?v=MDD1lHQKzJ0&t=5256s) Behind the scenes of Contentlayer
   - [1:31:00](https://www.youtube.com/watch?v=MDD1lHQKzJ0&t=5460s) Conclusion
 - [[Part 2] Building a blog with Contentlayer + Next.js](https://www.youtube.com/watch?v=U8dM5a86xg4)
-  - 0:00 Intro
-  - 3:18 Implementing new UI
-  - 47:38 Adding Dark Mode
-  - 54:56 Using Local Storage to persist theme state
-  - 1:01:20 Adding Pagination Component
-  - 1:30:50 Conclusion
+  - [0:00](https://www.youtube.com/watch?v=U8dM5a86xg4&t=0s) Intro
+  - [3:18](https://www.youtube.com/watch?v=U8dM5a86xg4&t=198s) Implementing new UI
+  - [47:38](https://www.youtube.com/watch?v=U8dM5a86xg4&t=2858s) Adding Dark Mode
+  - [54:56](https://www.youtube.com/watch?v=U8dM5a86xg4&t=3296s) Using Local Storage to persist theme state
+  - [1:01:20](https://www.youtube.com/watch?v=U8dM5a86xg4&t=3680s) Adding Pagination Component
+  - [1:30:50](https://www.youtube.com/watch?v=U8dM5a86xg4&t=5450s) Conclusion
 - [Part 3] Building a blog with Contentlayer + Next.js (Upcoming)
