@@ -29,3 +29,8 @@ Contentlayer is a content SDK that makes working with content easy.  Getting mar
   - [1:01:20](https://www.youtube.com/watch?v=U8dM5a86xg4&t=3680s) Adding Pagination Component
   - [1:30:50](https://www.youtube.com/watch?v=U8dM5a86xg4&t=5450s) Conclusion
 - [Part 3] Building a blog with Contentlayer + Next.js (Upcoming)
+  - Global site configuration
+  - Fixing the Dark Mode flicker issue
+  - Adding pagination to tags index page
+  - Adding meta tags for better SEO
+  - Deploying in Vercel
