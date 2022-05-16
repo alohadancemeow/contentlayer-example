@@ -5,6 +5,7 @@ import PostCard from "components/PostCard";
 import PageTitle from "components/PageTitle";
 import Pagination from "components/Pagination";
 import siteMetadata from "siteMetadata";
+import { NextSeo } from "next-seo";
 
 const totalPosts = allPosts.length;
 const totalPages = Math.ceil(totalPosts / siteMetadata.postsPerPage);
@@ -48,6 +49,21 @@ const Home: NextPage<{
 }> = ({ posts, totalPages, currentPage }) => {
   return (
     <Layout>
+      <NextSeo
+        title={`Page ${currentPage} | ${siteMetadata.author}`}
+        description={siteMetadata.description}
+        openGraph={{
+          title: `${siteMetadata.title} | ${siteMetadata.author}`,
+          description: siteMetadata.description,
+          url: siteMetadata.siteAddess,
+          site_name: siteMetadata.title,
+        }}
+        twitter={{
+          handle: "@naimulcsx",
+          site: "@naimulcsx",
+          cardType: "summary_large_image",
+        }}
+      />
       <PageTitle
         title="Contentlayer + Next.js Blog"
         description="Hi, I'm Naimul Haque. Aspiring to become a polymath."
