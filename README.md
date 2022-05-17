@@ -28,9 +28,23 @@ Contentlayer is a content SDK that makes working with content easy.  Getting mar
   - [54:56](https://www.youtube.com/watch?v=U8dM5a86xg4&t=3296s) Using Local Storage to persist theme state
   - [1:01:20](https://www.youtube.com/watch?v=U8dM5a86xg4&t=3680s) Adding Pagination Component
   - [1:30:50](https://www.youtube.com/watch?v=U8dM5a86xg4&t=5450s) Conclusion
-- [Part 3] Building a blog with Contentlayer + Next.js (Upcoming)
-  - Global site configuration
-  - Fixing the Dark Mode flicker issue
-  - Adding pagination to tags index page
-  - Adding meta tags for better SEO
-  - Deploying in Vercel
+- [[Part 3] Building a blog with Contentlayer + Next.js](https://youtu.be/YOaZbKFJOYE)
+  - [0:00](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=0s) Intro
+  - [2:10](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=130s) Adding Site Metadata
+  - [7:09](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=429s) Adding support for default theme
+  - [14:37](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=877s) Finding a better Dark Mode strategy for SSG pages 
+  - [15:20](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=920s) Explaining a dark mode strategy for SSR pages
+  - [19:35](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=1175s) Way to remove the flicker in our dark mode
+  - [41:33](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=2493s) Adding Meta Tags for better SEO
+  - [43:38](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=2618s) Using next-seo component
+  - [1:02:13](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=3733s) Cleaning up files
+  - [1:04:10](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=3850s) Fixing pagination in homepage
+  - [1:05:50](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=3950s) Controlling posts per page via Site Metadata
+  - [1:07:05](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=4025s) Fixing warnings
+  - [1:10:05](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=4205s) What we've done so far
+  - [1:11:45](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=4305s) Deploying our Next.js app in Vercel
+  - [1:16:26](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=4586s) How to add domain in Vercel
+  - [1:16:55](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=4615s) How to Update our app?
+  - [1:17:42](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=4662s) Testing out CI/CD with Vercel
+  - [1:23:10](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=4990s) Testing social media previews for links
+  - [1:26:10](https://www.youtube.com/watch?v=YOaZbKFJOYE&t=5170s) Conclusion
